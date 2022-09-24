@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Summary from "../components/Summary";
+import Products from "../components/Products";
+---
+
+<Layout title="Cart">
+  <div class="pt-[25px]">
+    <div class="text-sm breadcrumbs">
+      <ul>
+        <li><a href="/">Shop</a></li>
+        <li><a class="text-indigo-400">Cart</a></li>
+      </ul>
+    </div>
+    <div class="flex justify-between">
+      <Products client:load />
+      <Summary />
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import BillingDetails from '../components/BillingDetails'
+import CheckoutSummary from '../components/CheckoutSummary'
+---
+
+<Layout title="Cart">
+  <div class="pt-[25px]">
+    <div class="text-sm breadcrumbs">
+      <ul>
+        <li><a href="/">Shop</a></li>
+        <li><a href="/cart">Cart</a></li>
+        <li><a class="text-indigo-400">Checkout</a></li>
+      </ul>
+    </div>
+    <div class="flex justify-between">
+      <BillingDetails />
+      <CheckoutSummary />
+    </div>
+  </div>
+</Layout>
