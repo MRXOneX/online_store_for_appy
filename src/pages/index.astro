@@ -1,25 +1,15 @@
 ---
+import Shop from '../components/Pages/Shop'
 import Card from '../components/Card';
+
 
 import Layout from '../layouts/Layout.astro';
 
 
-const items = [
-	{title: 'Shirt', description: 'desct', price: '$40.00', rating: 4, image: 'https://placeimg.com/400/222/arch'},
-	{title: 'Shirt', description: 'desct', price: '$40.00', rating: 4, image: 'https://placeimg.com/400/215/arch'},
-	{title: 'Shirt', description: 'desct', price: '$40.00', rating: 4, image: 'https://placeimg.com/400/235/arch'},
-	{title: 'Shirt', description: 'desct', price: '$40.00', rating: 4, image: 'https://placeimg.com/400/245/arch'},
-	{title: 'Shirt', description: 'desct', price: '$40.00', rating: 4, image: 'https://placeimg.com/400/221/arch'},
-	{title: 'Shirt', description: 'desct', price: '$40.00', rating: 4, image: 'https://placeimg.com/400/225/arch'},
-	{title: 'Shirt', description: 'desct', price: '$40.00', rating: 4, image: 'https://placeimg.com/400/245/arch'},
-	{title: 'Shirt', description: 'desct', price: '$40.00', rating: 4, image: 'https://placeimg.com/400/227/arch'},
-	{title: 'Shirt', description: 'desct', price: '$40.00', rating: 4, image: 'https://placeimg.com/400/255/arch'}
-]
+
 ---
 
 <Layout title="Shop for appy">
-	<div class="flex justify-between flex-wrap">
-		{items.map(item => <Card client:load item={item} />)}
-	</div>
+	<Shop client:load />
 </Layout>
 

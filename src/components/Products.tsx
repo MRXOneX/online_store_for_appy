@@ -22,7 +22,7 @@ export default function Products() {
             <td>
               <span>{item.title}</span>
             </td>
-            <td>{item.price}</td>
+            <td>${item.price}</td>
             <td className="flex justify-end">
               <button>
                 <IoMdRemoveCircleOutline size={24} />
